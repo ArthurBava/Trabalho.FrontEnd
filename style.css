@@ -1,0 +1,110 @@
+/* Fundo em gradiente roxo + azul escuro */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #4b0082, #0d1b2a);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container central */
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Foto de perfil centralizada */
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 20px;
+}
+
+/* Nome e título */
+.name {
+    font-size: 2.5rem;
+    margin: 10px 0 5px;
+}
+
+.title {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #d1c4e9;
+}
+
+/* Caixinhas de informações */
+.info-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 200px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    text-align: left;
+}
+
+.info-box h3 {
+    margin-top: 0;
+    color: #bb86fc;
+}
+
+.info-box p, .info-box ul {
+    margin: 10px 0 0;
+}
+/*  alteração para deixar a foto no lugar certo  */
+.profile-pic img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;   /* garante que preencha sem distorcer */
+  object-position: center; /* centraliza o rosto */
+  border-radius: 50%;  /* deixa redonda */
+  border: 4px solid #fff;
+  margin-bottom: 20px;
+  object-position: top;
+  object-position: 50% 30%; /* (horizontal%, vertical%) */
+}
+/* Linha que contém duas caixinhas lado a lado */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin: 30px 0;
+}
+
+/* Caixinhas individuais */
+.info-box {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.4);
+  text-align: left;
+   opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Caixas da linha superior */
+.info-box.left {
+  text-align: left;
+}
+
+.info-box.right {
+  text-align: left;
+}
+
+/* Caixa de contato embaixo ocupa toda a largura */
+.container > .info-box {
+  margin-top: 20px;
+}
+.info-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
