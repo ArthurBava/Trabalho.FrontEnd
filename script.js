@@ -7,9 +7,8 @@ function typeWriter(el, speed = 120) {
   );
 }
 
-// Aplica efeito no nome e depois no subtítulo
 typeWriter(document.querySelector('.name'));
-setTimeout(() => typeWriter(document.querySelector('.title')), 1500);
+setTimeout(() => typeWriter(document.querySelector('.title')), 800);
 
 document.addEventListener('DOMContentLoaded', function() {
     const boxes = document.querySelectorAll('.info-box');
