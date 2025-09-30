@@ -108,3 +108,41 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+.navgar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #2a2a72;
+  padding: 15px 0;
+  z-index: 1000;
+}
+.navgar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navgar ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.navgar ul li a:hover{
+  color: #a29bfe;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #2a2a72, #512da8);
+  color: #fff;
+  scroll-behavior: smooth; 
+}
+.container {
+  padding-top: 100px; 
+  max-width: 900px;
+  margin: auto;
+}
