@@ -173,3 +173,27 @@ body {
   font-weight: 300;
   color: #ddd;
 }
+.pagina {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* difernciar fundo das paginas, um de cada*/
+#hero {
+  background: linear-gradient(135deg, #2a2a72, #512da8);
+  text-align: center;
+}
+#sobre{
+  background: #1a1a40;
+}
+#habilidades {
+  background: #282850;
+}
+#contato {
+  background: #202040;
+}
