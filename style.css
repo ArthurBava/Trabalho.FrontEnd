@@ -180,3 +180,36 @@ body {
 #contato {
   background: #202040;
 }
+/* Telas pequenas (celulares) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* texto menor */
+  }
+  .container {
+    padding: 10px;
+  }
+  .grid {
+    grid-template-columns: 1fr; /* 1 coluna no mobile */
+  }
+}
+
+/* Telas médias (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas no tablet */
+  }
+}
+
+/* Telas grandes (notebooks e desktops) */
+@media (min-width: 901px) {
+  body {
+    font-size: 18px;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas no desktop */
+  }
+}
+
